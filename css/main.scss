@@ -1832,3 +1832,20 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
+
+	// index page
+	.languages {
+		li {
+			text-align: center;
+		}
+		h3 {
+			text-align: center;
+		}
+		.joiner {
+			color: _palette(accent2, bg);
+			position: relative;
+			top: -10px;
+			margin: 0 5px 0 10px;
+		}
+
+	}
