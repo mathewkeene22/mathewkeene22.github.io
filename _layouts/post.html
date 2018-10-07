@@ -10,6 +10,9 @@ layout: default
 
   <section class="wrapper style5">
     <div class="inner">
+      {% for tag in page.tags %}
+      <p class="tags">{{tag}}</p>
+       {% endfor %}
       {{ content }}
     </div>
   </section>

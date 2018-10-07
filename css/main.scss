@@ -1851,3 +1851,12 @@ $baseurl: '{{ site.baseurl }}/images';
 			margin: 0 5px 0 10px;
 		}
 	}
+
+	// posts
+	.tags {
+    background: #ececec;
+    display: inline-block;
+    border-radius: .2em;
+    padding: 0 .25em;
+    color: red;
+}
