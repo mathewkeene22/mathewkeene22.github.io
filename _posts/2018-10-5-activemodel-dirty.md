@@ -32,10 +32,10 @@ matty.favorite_pizza_change # => ['mushroom and olive', 'bbq chicken']
 Another powerful option Dirty provides is the ability to return true or false when a change meets a specific requirement
 
 ```ruby
-matt.preferred_crust # => 'New York'
+matty.preferred_crust # => 'New York'
 matty.preferred_crust = 'Sicilian'
 matty.preferred_crust_changed?(from: 'New York', to: 'Sicilian') # => true
 ```
 
-There are a handful of other useful methods you can read about [in the Rails documentation](https://api.rubyonrails.org/classes/ActiveModel/Dirty.html) for a deeper look into this library.
+There are a handful of other useful methods you can read about in the [Rails documentation](https://api.rubyonrails.org/classes/ActiveModel/Dirty.html) for a deeper look into this library.
 ## 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕 🍕

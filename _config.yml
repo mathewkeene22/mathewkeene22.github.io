@@ -5,7 +5,7 @@
 title: MattyKeene
 description: |
   Software Developer. Tinkerer. Lover of the outdoors.
-owner: Mathew Keene
+owner: Matt Keene
 # first_published: # if migrating another site, the year of your first publish
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -55,3 +55,7 @@ social:
 markdown: kramdown
 #sass:
 #  style: compressed
+
+slideshow:
+    width: 150
+    height: 100

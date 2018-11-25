@@ -1859,4 +1859,14 @@ $baseurl: '{{ site.baseurl }}/images';
     border-radius: .2em;
     padding: 0 .25em;
     color: red;
-}
+	}
+
+	// gallery
+	.photo-gallery {
+		ul {
+			list-style: none;
+			li img {
+				max-width: 175px;
+			}
+		}
+	}
