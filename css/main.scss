@@ -1862,10 +1862,56 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	// gallery
 	.image-gallery {
-		img {
-    	max-width: 300px;
+	  line-height: 0;
+	  -webkit-column-count: 5;
+	  -webkit-column-gap:   0px;
+	  -moz-column-count:    5;
+	  -moz-column-gap:      0px;
+	  column-count:         5;
+	  column-gap:           0px;
+	}
+
+	.image-gallery a {
+		border-bottom: none;
+		 img {
+		  width: 100% !important;
+		  height: auto !important;
+			padding: 5px;
+			-webkit-filter: grayscale(0);
+			filter: none;
+			&:hover {
+				filter: gray; /* IE6-9 */
+				-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+				filter: grayscale(1);
+			}
 		}
-		a {
-			border-bottom: none;
-		}
-}
+	}
+
+	@media (max-width: 1200px) {
+	  .image-gallery {
+	  -moz-column-count:    4;
+	  -webkit-column-count: 4;
+	  column-count:         4;
+	  }
+	}
+	@media (max-width: 1000px) {
+	  .image-gallery {
+	  -moz-column-count:    3;
+	  -webkit-column-count: 3;
+	  column-count:         3;
+	  }
+	}
+	@media (max-width: 800px) {
+	  .image-gallery {
+	  -moz-column-count:    2;
+	  -webkit-column-count: 2;
+	  column-count:         2;
+	  }
+	}
+	@media (max-width: 400px) {
+	  .image-gallery {
+	  -moz-column-count:    1;
+	  -webkit-column-count: 1;
+	  column-count:         1;
+	  }
+	}
