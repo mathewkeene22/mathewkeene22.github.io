@@ -1861,7 +1861,15 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	// gallery
+	.loading {
+		width: 100%;
+		text-align: center;
+		font-size: 3em;
+		color: #505393;
+	}
+	
 	.image-gallery {
+		opacity: 0;
 	  line-height: 0;
 	  -webkit-column-count: 5;
 	  -webkit-column-gap:   0px;
