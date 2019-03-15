@@ -7,7 +7,7 @@ categories: [tech]
 ---
 
 ## Cleaning Up With ActiveModel Dirty
-ActiveModel::Dirty is a handy library that allows you to detect when an object has changed from the model level. I've found this to be incredibly helpful when you only want to run a method after a specific change occurs. You are able to track these changes by appending `_changed?` to the attribute being listened to.
+ActiveModel::Dirty is a handy module that allows you to detect when an object has changed from the model level. I've found this to be incredibly helpful when you only want to run a method after a specific change occurs. You are able to track these changes by appending `_changed?` to the attribute being listened to.
 
 Often times I will use ActiveModel:Dirty in a call back like so:
 
